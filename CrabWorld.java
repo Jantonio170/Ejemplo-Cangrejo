@@ -17,7 +17,8 @@ public class CrabWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(500, 500, 1); 
-        
+        Tiempo tiempo = new Tiempo();
+        this.addObject(tiempo, 60, 20);
         prepare();
     }
 
@@ -47,6 +48,5 @@ public class CrabWorld extends World
         addObject(crab,102,70);
         Lobster lobster = new Lobster();
         addObject(lobster,342,310);
-        Tiempo 
     }
 }
