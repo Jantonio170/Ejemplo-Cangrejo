@@ -8,6 +8,12 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Crab extends Actor
 {
+    private Counter vidas;
+    
+    public Crab()
+    {
+        
+    }
     /**
      * Act - do whatever the Crab wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -28,6 +34,12 @@ public class Crab extends Actor
         {
             removeTouching(Worm.class);
             Greenfoot.playSound("eating.wav");
+        }
+        if(isTouching(Lobster.class))
+        {
+            vidas.setValue(vidas.getValue()-1);
+            setLocation(102,70);
+            getWorldOfType(CrabWorld.class).accedeLangosta().setLocation(250, 500);
         }
     }    
 }

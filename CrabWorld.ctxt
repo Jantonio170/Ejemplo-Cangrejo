@@ -9,4 +9,6 @@ comment2.target=void\ creaGusanos(int)
 comment2.text=private\ void\ prepare()\n\ \ \ \ {\n\ \ \ \ \ \ \ \ Worm\ worm\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm,247,47);\n\ \ \ \ \ \ \ \ Worm\ worm2\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm2,78,172);\n\ \ \ \ \ \ \ \ Worm\ worm3\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm3,76,399);\n\ \ \ \ \ \ \ \ Worm\ worm4\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm4,294,431);\n\ \ \ \ \ \ \ \ Worm\ worm5\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm5,439,324);\n\ \ \ \ \ \ \ \ Worm\ worm6\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm6,451,172);\n\ \ \ \ \ \ \ \ Worm\ worm7\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm7,297,214);\n\ \ \ \ \ \ \ \ Worm\ worm8\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm8,430,43);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \n}
 comment3.params=
 comment3.target=void\ decrementaVidas()
-numComments=4
+comment4.params=
+comment4.target=Lobster\ accedeLangosta()
+numComments=5

@@ -85,4 +85,9 @@ public class CrabWorld extends World
             Greenfoot.stop();
         }
     }
+    
+    public Lobster accedeLangosta()
+    {
+        return lobster; 
+    }
 }
