@@ -29,9 +29,14 @@ public class Lobster extends Actor
                 //se le resta 90 para que de un aleatorio entre -90 y 90
             pasos = 0;
         }
+        
         if(isTouching(Crab.class))
         {
-            removeTouching(Crab.class);
+            CrabWorld myMundo = (CrabWorld)this.getWorld();
+            myMundo.decrementaVidas();
+            
+            
+            //removeTouching(Crab.class);
         }
 
     }    

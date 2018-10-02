@@ -8,7 +8,8 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class CrabWorld extends World
 {
-
+    private Counter vidas;
+    private Crab crab;
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -19,6 +20,10 @@ public class CrabWorld extends World
         super(500, 500, 1); 
         Tiempo tiempo = new Tiempo();
         this.addObject(tiempo, 60, 20);
+        
+        vidas = new Counter("Vidas: ");
+        this.addObject(vidas, 420, 20);
+        vidas.setValue(3);
         prepare();
     }
 
@@ -44,9 +49,20 @@ public class CrabWorld extends World
         addObject(worm7,297,214);
         Worm worm8 = new Worm();
         addObject(worm8,430,43);
-        Crab crab = new Crab();
+        crab = new Crab();
         addObject(crab,102,70);
         Lobster lobster = new Lobster();
         addObject(lobster,342,310);
+    }
+    
+    public void decrementaVidas()
+    {
+        int valor = vidas.getValue()-1;
+        vidas.setValue(valor);
+        crab.setLocation(102, 70);
+        if(valor == 0)
+        {
+            Greenfoot.stop();
+        }
     }
 }
