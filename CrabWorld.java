@@ -10,28 +10,39 @@ public class CrabWorld extends World
 {
     private Counter vidas;
     private Crab crab;
+    private Lobster lobster;
     /**
      * Constructor for objects of class MyWorld.
      * 
      */
-    public CrabWorld()
+    public CrabWorld(int numGusanos)
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(500, 500, 1); 
+        
+        crab = new Crab();
+        this.addObject(crab,102,70);
+        
+        lobster = new Lobster();
+        this.addObject(lobster,342,310);
+        
         Tiempo tiempo = new Tiempo();
         this.addObject(tiempo, 60, 20);
         
         vidas = new Counter("Vidas: ");
-        this.addObject(vidas, 420, 20);
+        this.addObject(vidas, 440, 20);
         vidas.setValue(3);
-        prepare();
+        
+        creaGusanos(numGusanos);
+        
+        //prepare();
     }
-
+    //Generar una cantidad N de gusanos en posiciones aleatorias
     /**
      * Prepare the world for the start of the program.
      * That is: create the initial objects and add them to the world.
      */
-    private void prepare()
+    /*private void prepare()
     {
         Worm worm = new Worm();
         addObject(worm,247,47);
@@ -49,10 +60,19 @@ public class CrabWorld extends World
         addObject(worm7,297,214);
         Worm worm8 = new Worm();
         addObject(worm8,430,43);
-        crab = new Crab();
-        addObject(crab,102,70);
-        Lobster lobster = new Lobster();
-        addObject(lobster,342,310);
+        
+        
+    }*/
+    
+    public void creaGusanos(int N)
+    {
+        
+        for(int i=0; i<N; i++)
+        {
+            Worm worm;
+            worm = new Worm();
+            this.addObject(worm, Greenfoot.getRandomNumber(499), Greenfoot.getRandomNumber(499));
+        }
     }
     
     public void decrementaVidas()
