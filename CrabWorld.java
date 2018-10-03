@@ -11,6 +11,8 @@ public class CrabWorld extends World
     private Counter vidas;
     private Crab crab;
     private Lobster lobster;
+    private GreenfootSound musica;
+    
     /**
      * Constructor for objects of class MyWorld.
      * 
@@ -35,8 +37,21 @@ public class CrabWorld extends World
         
         creaGusanos(numGusanos);
         
+        musica = new GreenfootSound("ufo-t-balt.mp3");
         //prepare();
     }
+    
+    public void started()
+    {
+        //Greenfoot.playSound("ufo-t-balt.mp3");
+        musica.playLoop();
+    }
+    
+    public void stopped()
+    {
+        musica.pause();
+    }
+    
     //Generar una cantidad N de gusanos en posiciones aleatorias
     /**
      * Prepare the world for the start of the program.

@@ -1,14 +1,18 @@
 #BlueJ class context
 comment0.target=CrabWorld
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment0.text=\n\ Write\ a\ description\ of\ class\ MyWorld\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
 comment1.params=numGusanos
 comment1.target=CrabWorld(int)
-comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\r\n\ \r\n
-comment2.params=N
-comment2.target=void\ creaGusanos(int)
-comment2.text=private\ void\ prepare()\r\n\ \ \ \ {\r\n\ \ \ \ \ \ \ \ Worm\ worm\ \=\ new\ Worm();\r\n\ \ \ \ \ \ \ \ addObject(worm,247,47);\r\n\ \ \ \ \ \ \ \ Worm\ worm2\ \=\ new\ Worm();\r\n\ \ \ \ \ \ \ \ addObject(worm2,78,172);\r\n\ \ \ \ \ \ \ \ Worm\ worm3\ \=\ new\ Worm();\r\n\ \ \ \ \ \ \ \ addObject(worm3,76,399);\r\n\ \ \ \ \ \ \ \ Worm\ worm4\ \=\ new\ Worm();\r\n\ \ \ \ \ \ \ \ addObject(worm4,294,431);\r\n\ \ \ \ \ \ \ \ Worm\ worm5\ \=\ new\ Worm();\r\n\ \ \ \ \ \ \ \ addObject(worm5,439,324);\r\n\ \ \ \ \ \ \ \ Worm\ worm6\ \=\ new\ Worm();\r\n\ \ \ \ \ \ \ \ addObject(worm6,451,172);\r\n\ \ \ \ \ \ \ \ Worm\ worm7\ \=\ new\ Worm();\r\n\ \ \ \ \ \ \ \ addObject(worm7,297,214);\r\n\ \ \ \ \ \ \ \ Worm\ worm8\ \=\ new\ Worm();\r\n\ \ \ \ \ \ \ \ addObject(worm8,430,43);\r\n\ \ \ \ \ \ \ \ \r\n\ \ \ \ \ \ \ \ \r\n}
+comment1.text=\n\ Constructor\ for\ objects\ of\ class\ MyWorld.\n\ \n
+comment2.params=
+comment2.target=void\ started()
 comment3.params=
-comment3.target=void\ decrementaVidas()
-comment4.params=
-comment4.target=Lobster\ accedeLangosta()
-numComments=5
+comment3.target=void\ stopped()
+comment4.params=N
+comment4.target=void\ creaGusanos(int)
+comment4.text=private\ void\ prepare()\n\ \ \ \ {\n\ \ \ \ \ \ \ \ Worm\ worm\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm,247,47);\n\ \ \ \ \ \ \ \ Worm\ worm2\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm2,78,172);\n\ \ \ \ \ \ \ \ Worm\ worm3\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm3,76,399);\n\ \ \ \ \ \ \ \ Worm\ worm4\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm4,294,431);\n\ \ \ \ \ \ \ \ Worm\ worm5\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm5,439,324);\n\ \ \ \ \ \ \ \ Worm\ worm6\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm6,451,172);\n\ \ \ \ \ \ \ \ Worm\ worm7\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm7,297,214);\n\ \ \ \ \ \ \ \ Worm\ worm8\ \=\ new\ Worm();\n\ \ \ \ \ \ \ \ addObject(worm8,430,43);\n\ \ \ \ \ \ \ \ \n\ \ \ \ \ \ \ \ \n}
+comment5.params=
+comment5.target=void\ decrementaVidas()
+comment6.params=
+comment6.target=Lobster\ accedeLangosta()
+numComments=7

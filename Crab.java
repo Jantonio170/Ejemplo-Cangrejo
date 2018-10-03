@@ -38,11 +38,18 @@ public class Crab extends Actor
             removeTouching(Worm.class);
             Greenfoot.playSound("eating.wav");
         }
-        /*if(isTouching(Lobster.class))
+        if(isTouching(Lobster.class))
         {
-            vidas.setValue(vidas.getValue()-1);
+            //vidas.setValue(vidas.getValue()-1);
             setLocation(102,70);
+            Label perdiste = new Label("PERDISTE UNA VIDA", 30);
+            getWorld().addObject(perdiste, 250, 250);
+            Greenfoot.delay(50);
+            getWorld().removeObject(perdiste);
+            //getWorld().showText("PEDISTE UNA VIDA", 200, 300);
+            //Para acceder a cualquier metodo de la clase world en general
             getWorldOfType(CrabWorld.class).accedeLangosta().setLocation(250, 500);
-        }*/
+            //Para acceder a cualquier metodo de la subclase
+        }
     }    
 }
