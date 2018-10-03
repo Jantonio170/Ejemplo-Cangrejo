@@ -34,8 +34,7 @@ public class Lobster extends Actor
         {
             CrabWorld myMundo = (CrabWorld)this.getWorld();
             myMundo.decrementaVidas();
-            
-            
+            this.setLocation(342,310);
             //removeTouching(Crab.class);
         }
 
